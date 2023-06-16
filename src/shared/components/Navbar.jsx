@@ -4,20 +4,12 @@ import { Route } from '../models/Route'
 
 const routes = [
   new Route({
-    title: 'Reporte Gastos',
-    path: '/reporte',
-    subRoutes: [
-      new Route({ title: 'Reporte Ingreso', path: '/repIngreso' }),
-      new Route({ title: 'Reporte Egresos', path: '/repEgreso' })
-    ]
+    title: 'Reporte',
+    path: '/reporte/reporteMov'
   }),
   new Route({
     title: 'Registro',
-    path: '/registro',
-    subRoutes: [
-      new Route({ title: 'Ingreso', path: '/ingreso' }),
-      new Route({ title: 'Egreso', path: '/egreso' }),
-    ]
+    path: '/registro/registroMov'
   }),
   new Route({ title: 'Log Out', path: '/' }),
 ]
@@ -57,7 +49,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand bg-body-tertiary">
       <div className="container-fluid">
-        <h1>RG </h1>
+        <h1>RG</h1>
 
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           {routes.map((route) =>
