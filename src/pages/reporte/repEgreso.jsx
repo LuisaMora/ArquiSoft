@@ -1,7 +1,7 @@
 export default function UpdateCategoriesPage() {
   return (
     <div>
-      <h1>Actualizar Categorias</h1>
+      <h1>Reporte Egreso</h1>
     </div>
   )
 }

@@ -3,22 +3,23 @@ import Link from 'next/link'
 import { Route } from '../models/Route'
 
 const routes = [
-  new Route({ title: 'Inicio', path: '/' }),
   new Route({
-    title: 'Categorias',
-    path: '/categories',
+    title: 'Reporte Gastos',
+    path: '/reporte',
     subRoutes: [
-      new Route({ title: 'Actualizar', path: '/update' }),
-      new Route({ title: 'Lista de categorias', path: '/list' })
+      new Route({ title: 'Reporte Ingreso', path: '/repIngreso' }),
+      new Route({ title: 'Reporte Egresos', path: '/repEgreso' })
     ]
   }),
   new Route({
-    title: 'Productos',
-    path: '/products',
+    title: 'Registro',
+    path: '/registro',
     subRoutes: [
-      new Route({ title: 'Actualizar', path: '/update' })
+      new Route({ title: 'Ingreso', path: '/ingreso' }),
+      new Route({ title: 'Egreso', path: '/egreso' }),
     ]
-  })
+  }),
+  new Route({ title: 'Log Out', path: '/' }),
 ]
 
 const NavbarItem = ({ route = new Route({ title: 'Inicio', path: '/' }) }) => (
@@ -56,9 +57,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand bg-body-tertiary">
       <div className="container-fluid">
-        <Link className="navbar-brand" href="/">
-          Tienda Online
-        </Link>
+        <h1>RG </h1>
 
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           {routes.map((route) =>
