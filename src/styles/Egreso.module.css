@@ -1,0 +1,24 @@
+.titulo{
+    color: rgb(255, 255, 255);
+}
+.form{
+    background-color:#16191c;
+}
+.formu{
+    padding: 10px;
+}
+.mo{
+    background-color: #1E2126;
+} 
+.botonCancelar{
+    background-color: rgb(187, 18, 18);
+    color: white;
+    border-radius: 6px;
+    padding: 4px;
+}
+.botonAceptar{
+    background-color: rgb(80, 187, 18);
+    color: white;
+    border-radius: 6px;
+    padding: 4px;
+}

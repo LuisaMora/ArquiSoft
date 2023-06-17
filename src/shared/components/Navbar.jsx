@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import styles from '@/styles/Nav.module.css'
 import { Route } from '../models/Route'
 
 const routes = [
@@ -11,7 +12,10 @@ const routes = [
     title: 'Registro',
     path: '/registro/registroMov'
   }),
-  new Route({ title: 'Log Out', path: '/' }),
+  new Route({
+     title: 'Log Out',
+     path: '/' 
+  }),
 ]
 
 const NavbarItem = ({ route = new Route({ title: 'Inicio', path: '/' }) }) => (
@@ -47,6 +51,7 @@ const NavbarItemDropdown = ({ route = new Route({ title: '' }) }) => (
 
 export const Navbar = () => {
   return (
+    <div className={styles.container}>
     <nav className="navbar navbar-expand bg-body-tertiary">
       <div className="container-fluid">
         <h1>RG</h1>
@@ -62,5 +67,6 @@ export const Navbar = () => {
         </ul>
       </div>
     </nav>
+    </div>
   )
 }
