@@ -12,10 +12,10 @@ const routes = [
     title: 'Registro',
     path: '/registro/registroMov'
   }),
-  new Route({
-     title: 'Log Out',
-     path: '/' 
-  }),
+    new Route({
+    title: 'Log Out',
+    path: '/' 
+ }),
 ]
 
 const NavbarItem = ({ route = new Route({ title: 'Inicio', path: '/' }) }) => (
@@ -54,8 +54,6 @@ export const Navbar = () => {
     <div className={styles.container}>
     <nav className="navbar navbar-expand bg-body-tertiary">
       <div className="container-fluid">
-        <h1>RG</h1>
-
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           {routes.map((route) =>
             route.subRoutes.length > 0 ? (

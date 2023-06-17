@@ -1,9 +1,6 @@
-import Image from 'next/image'
-
-export default function HomePage() {
+import { useRouter } from "next/router"
+export default function Post() {
   return (
-    <div className="d-flex flex-column align-items-center">
-      <h3>Registro de Gastos</h3>
-    </div>
+    <h1>vista</h1>
   )
 }
