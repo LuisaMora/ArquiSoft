@@ -5,6 +5,10 @@ import { Route } from '../models/Route'
 
 const routes = [
   new Route({
+    title: 'Inicio',
+    path: '/principal/principalUsuario'
+  }),
+  new Route({
     title: 'Reporte',
     path: '/reporte/reporteMov'
   }),
