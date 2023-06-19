@@ -74,10 +74,10 @@
 .forgot{
     padding-right: 5%;
     text-align: right;
-    color: rgb(234, 85, 11);
+    color: white;
 }
 
-.botonLI, .botonSI{
+.botonLI{
     text-align: center;
     background-color: #C68422;
     color: white;
@@ -87,6 +87,34 @@
     border: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.botonLI:hover{
+    background:#794d0a;
+}
+
+.botonSI:hover{
+    background:#3d2808;
+}
+
+.forgot:hover{
+    color: rgb(231, 101, 36);
+}
+
+.button{
+    border-radius: 2px;
+}
+
+.botonSI{
+    text-align: center;
+    background-color: #64615B;
+    color: white;
+    border-radius: 6px;
+    padding: 5px 10px 10px 10px;
+    margin: 10px;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .posicionBoton{
     width: 100%;
     margin: 0 auto;
