@@ -18,7 +18,7 @@ export default function UpdateCategoriesPage() {
                 
                 <div className={styles.posicionBoton}>
                     <button className={styles.botonLI} type="submit">INGRESAR</button><br></br>
-                    <button className={styles.botonSI} type="submit">REGISTRAR</button><br></br>
+                    <button className={styles.botonSI} type="submit" >REGISTRAR</button><br></br>
                 </div>
             </form>
             </div>

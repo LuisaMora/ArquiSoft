@@ -18,8 +18,13 @@ const routes = [
   }),
   new Route({
      title: 'Log Out',
-     path: '/' 
+     path: '/login/login' 
   }),
+
+  new Route({
+    path: '/registroUsuario/registroUsuario' 
+ }),
+  
 ]
 
 const NavbarItem = ({ route = new Route({ title: 'Inicio', path: '/' }) }) => (
