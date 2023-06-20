@@ -3,20 +3,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #C68422;
     padding: 30px;
-    background: linear-gradient(to bottom right,hsl(33, 65%, 20%), black );
 }
 
 
-.titulo, .labels,  .botonLI, .botonSI{
+.titulo, .labels,  .botonRegistrar{
     color: white;
     font-size: 130%;
-}
-
-.forgot{
-    color: white;
-    font-size: 90%;
 }
 
 .titulo{
@@ -56,28 +49,14 @@
     color: white;
 }
 
-.forgotContainer{
-    align-content: end;
-    text-align: end;
-    
-    padding-top: 0;
-    padding-bottom: 7%;
-}
-
-.botonLI, .botonSI{
+.botonRegistrar{
     display: inline-block;
     width: 270px;
     text-align: right;
     font-style: normal;
 }
 
-.forgot{
-    padding-right: 5%;
-    text-align: right;
-    color: white;
-}
-
-.botonLI{
+.botonRegistrar{
     text-align: center;
     background-color: #C68422;
     color: white;
@@ -88,31 +67,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.botonLI:hover{
+.botonRegistrar:hover{
     background:#794d0a;
-}
-
-.botonSI:hover{
-    background:#3d2808;
-}
-
-.forgot:hover{
-    color: rgb(231, 101, 36);
 }
 
 .button{
     border-radius: 2px;
-}
-
-.botonSI{
-    text-align: center;
-    background-color: #64615B;
-    color: white;
-    border-radius: 6px;
-    padding: 5px 10px 10px 10px;
-    margin: 10px;
-    border: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .posicionBoton{
@@ -120,3 +80,4 @@
     margin: 0 auto;
     justify-content: center;
 }
+
