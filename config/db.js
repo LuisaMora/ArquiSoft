@@ -1,16 +1,21 @@
-const {createPool}= require ('mysql');
-const pool= createPool({
-    host:"localhost",
-    user:"root",
-    password:"ServilyLulu123",
-    port:3306,
-    database:"gastos_web",
+import mysql from "serverless-mysql";
+
+export const db = mysql({
+  config: {
+    host:'localhost',
+    port: 3306,
+    database: 'gastos_web',
+    user: 'root',
+    password: 'ServilyLulu123',
+  },
 });
 
-pool.getConnection((err)=>{
-    if (err){
-        console.log(err);
-    }
-    console.log("Conectado a la base de datos...");
-});
-module.exports = pool;
+export default async function excuteQuery({ query, values }) {
+  try {
+    const results = await db.query(query, values);
+    await db.end();
+    return results;
+  } catch (error) {
+    return { error };
+  }
+}

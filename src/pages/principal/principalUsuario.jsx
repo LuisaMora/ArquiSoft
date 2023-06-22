@@ -1,7 +1,11 @@
 import styles from '@/styles/Principal.module.css'
 import Image from 'next/image'
 import logo from '../../image/logo-02.png'
+import React, { useState } from "react";
+import axios from 'axios';
+
 export default function UpdateCategoriesPage() {
+    const [value, setValue] = useState('joa');
     return (
             <div>
                 <h2 className={styles.tituloInicio}>Reporte total</h2>
@@ -30,7 +34,7 @@ export default function UpdateCategoriesPage() {
 
                     <div className={styles.saldoBoton}>
                         <p className={styles.saldo}>Saldo: 450 Bs</p>
-                        <button className={styles.registrarMovimiento}>Registrar movimiento</button>
+                        <a href="/registro/registroMov"> <button className={styles.registrarMovimiento}  >Registrar movimiento</button></a>
                     </div>
                 </div>
             </div>
