@@ -7,7 +7,6 @@ export default function registroUsuario() {
 
 
     const handleSubmit=()=>{
-
         let data={
             idUsuario: 0,
             nombre: document.querySelector('#nombre').value,

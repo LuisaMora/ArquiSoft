@@ -19,6 +19,8 @@ export default function UpdateCategoriesPage() {
    }).catch((error)=>{
     console.log(error);
    })
+
+   
  }
 
     return (
