@@ -1,0 +1,122 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2c2b2b;
+    padding: 30px;
+}
+
+
+.titulo, .labels,  .botonLI, .botonSI{
+    color: white;
+    font-size: 130%;
+}
+
+.forgot{
+    color: white;
+    font-size: 90%;
+}
+
+.titulo{
+    padding-top: 7%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.form{
+    background-color:#16191c;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.titulo{
+    text-align: center;
+    margin-top: 8px;
+}
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+}
+.captura{
+    background-color: #1E2126;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    width: 300px;
+    height: 35px;
+    border-radius: 6px;
+    color: white;
+}
+
+.forgotContainer{
+    align-content: end;
+    text-align: end;
+    
+    padding-top: 0;
+    padding-bottom: 7%;
+}
+
+.botonLI, .botonSI{
+    display: inline-block;
+    width: 270px;
+    text-align: right;
+    font-style: normal;
+}
+
+.forgot{
+    padding-right: 5%;
+    text-align: right;
+    color: white;
+}
+
+.botonLI{
+    text-align: center;
+    background-color: #C68422;
+    color: white;
+    border-radius: 6px;
+    padding: 5px 10px 10px 10px;
+    margin: 10px;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.botonLI:hover{
+    background:#794d0a;
+}
+
+.botonSI:hover{
+    background:#3d2808;
+}
+
+.forgot:hover{
+    color: rgb(231, 101, 36);
+}
+
+.button{
+    border-radius: 2px;
+}
+
+.botonSI{
+    text-align: center;
+    background-color: #64615B;
+    color: white;
+    border-radius: 6px;
+    padding: 5px 10px 10px 10px;
+    margin: 10px;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.posicionBoton{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}

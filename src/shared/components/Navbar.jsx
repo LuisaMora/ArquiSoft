@@ -16,10 +16,15 @@ const routes = [
     title: 'Registro',
     path: '/registro/registroMov'
   }),
-    new Route({
-    title: 'Log Out',
-    path: '/' 
+  new Route({
+     title: 'Log Out',
+     path: '/login/login' 
+  }),
+
+  new Route({
+    path: '/registroUsuario/registroUsuario' 
  }),
+  
 ]
 
 const NavbarItem = ({ route = new Route({ title: 'Inicio', path: '/' }) }) => (
