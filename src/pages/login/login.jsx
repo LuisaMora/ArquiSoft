@@ -1,6 +1,13 @@
 import styles from '@/styles/Login.module.css'
+import logo from '../../image/chanchito.png'
 export default function UpdateCategoriesPage() {
     return (
+        <div>
+            <Image
+                        src={logo}
+                        width={250}
+                        height={250}>   
+                        </Image>
         <div className={styles.container}>
             <div className={styles.form}>
             <h1 className={styles.titulo}>BIENVENIDO</h1>
@@ -22,6 +29,7 @@ export default function UpdateCategoriesPage() {
                 </div>
             </form>
             </div>
+        </div>
         </div>
     )
   }

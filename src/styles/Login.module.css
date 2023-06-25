@@ -3,9 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #C68422;
+    background: #2c2b2b;
     padding: 30px;
-    background: linear-gradient(to bottom right,hsl(33, 65%, 20%), black );
 }
 
 
@@ -33,6 +32,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
 .titulo{
     text-align: center;
